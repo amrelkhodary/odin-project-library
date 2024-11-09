@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Monsieur+La+Doulaise&display=swap"
+        rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="header-title">The Odin Library</h1>
+    </div>
+    <div class="books-div">
+        <div class="books-grid">
+
+        </div>
+    </div>
+    <div class="add-book">
+        <button class="add-book-button">Add a Book!</button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo-div">
+            <h3 class="footer-logo">The Odin Library</h3>
+        </div>
+
+        <div class="footer-credit-text-div">
+            <p class="footer-credit-text">Made with <span style="color: red;">❤️</span> by Amr Elkhodary</p>
+        </div>
+
+        <div class="footer-links-div">
+            <a href="https://www.linkedin.com/in/amr-elkhodary-091093290" class="footer-linkedin-link">LinkedIn</a>
+            <a href="https://github.com/amrelkhodary" class="footer-github-link">GitHub</a>
+        </div>
+    </div>
+
+    <div class="popup-form-div hide popup-overlay">
+        <h1>Add a new Book</h1>
+        <form class="popup-form" method="POST" action="./index.html">
+            <label for="book-title-input">Title</label>
+            <input type="text" id="book-title-input" name="book-title" placeholder="e.g. War and Peace">
+
+            <label for="book-author-input">Author</label>
+            <input type="text" id="book-author-input" name="book-author" placeholder="e.g. Leo Tolstoy">
+
+            <label for="book-release-year-input">Release Year</label>
+            <input type="number" id="book-release-year-input" name="book-release-year" placeholder="e.g. 1865">
+
+            <label for="book-genre-dropdown">Genre</label>
+            <select id="book-genre-dropdown" name="book-genre">
+                <option value="fiction">Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="thriller">Thriller & Suspense</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="romance">Romance</option>
+                <option value="historical-fiction">Historical Fiction</option>
+                <option value="biography">Biography & Memoir</option>
+                <option value="self-help">Self-Help</option>
+                <option value="young-adult">Young Adult (YA)</option>
+                <option value="fiction">Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="thriller">Thriller & Suspense</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="romance">Romance</option>
+                <option value="historical-fiction">Historical Fiction</option>
+                <option value="biography">Biography & Memoir</option>
+                <option value="self-help">Self-Help</option>
+                <option value="young-adult">Young Adult (YA)</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="true-crime">True Crime</option>
+                <option value="horror">Horror</option>
+                <option value="adventure">Adventure</option>
+                <option value="classic">Classic</option>
+                <option value="poetry">Poetry</option>
+                <option value="graphic-novels">Graphic Novels</option>
+                <option value="religion">Religion & Spirituality</option>
+                <option value="business">Business & Economics</option>
+                <option value="health">Health & Wellness</option>
+                <option value="cookbooks">Cookbooks</option>
+                <option value="art">Art & Photography</option>
+                <option value="travel">Travel</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="sports">Sports & Outdoors</option>
+
+            </select>
+
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <div class="form-blur-div hide">
+
+    </div>
+
+</body>
+
+</html>
